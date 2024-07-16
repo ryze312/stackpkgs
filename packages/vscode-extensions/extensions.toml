@@ -1,0 +1,38 @@
+[LeonardSSH.vscord.info]
+version = "5.2.12"
+hash = "sha256-WGDEizYG6UAqe1jnhvjfFouXDA9Yr5P+BjxPahAIsTE="
+
+[LeonardSSH.vscord.meta]
+description = "Highly customizable Discord Rich Presence extension for Visual Studio Code"
+homepage = "https://github.com/LeonardSSH/vscord"
+license = "MIT"
+
+
+[Catppuccin.catppuccin-vsc-icons.info]
+version = "1.13.0"
+hash = "sha256-4gsblUMcN7a7UgoklBjc+2uiaSERq1vmi0exLht+Xi0="
+
+[Catppuccin.catppuccin-vsc-icons.meta]
+description = "Catppuccin Icons for VSCode/VSCodium"
+homepage = "https://github.com/catppuccin/vscode-icons.git"
+license = "MIT"
+
+
+[keifererikson.nightfox.info]
+version = "0.0.14"
+hash = "sha256-EZGKJMc/N+0V+9U/k12tUbzgfCNzWhdrouXRi7QOdyY="
+
+[keifererikson.nightfox.meta]
+description = "A foxy theme for Visual Studio Code"
+homepage = "https://github.com/keifererikson/vscode-nightfox.git"
+license = "MIT"
+
+
+[willasm.comment-highlighter.info]
+version = "2.0.0"
+hash = "sha256-fBe0mYq0iWerxvBYF5jFS/dZizu65Nn1iHypo69Bb50="
+
+[willasm.comment-highlighter.meta]
+description = "Colorful Comment Highlighter for Visual Studio Code"
+homepage = "https://github.com/willasm/comment-highlighter#readme"
+license = "MIT"
