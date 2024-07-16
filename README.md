@@ -5,6 +5,8 @@
 
 Stackpkgs is a collection of packages and overlays commonly used in my NixOS configurations, split into a separate repository for ease of reuse and sharing.
 
+The list of available packages is available [here](./PACKAGES.md).
+
 ---
 <p align="center">
 <sub><strong>
