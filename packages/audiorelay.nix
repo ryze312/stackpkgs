@@ -73,4 +73,10 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
+  meta = {
+    description = "Application to stream every sound from your PC to one or multiple Android devices";
+    homepage = "https://audiorelay.net";
+    downloadPage = "https://audiorelay.net/downloads";
+    license = lib.licenses.unfree;
+  };
 }
