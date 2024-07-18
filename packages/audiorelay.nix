@@ -72,16 +72,14 @@ stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
 
-    mkdir -p $out/share/{applications,pixmaps}
-    cp ${desktopItem}/share/applications/audiorelay.desktop $out/share/applications
-    cp lib/AudioRelay.png $out/share/pixmaps/audiorelay.png
+    install -Dm644 ${desktopItem}/share/applications/audiorelay.desktop $out/share/applications/audiorelay
+    install -Dm644 lib/AudioRelay.png $out/share/pixmaps/audiorelay.png
 
-    mkdir -p $out/lib
-    cp lib/app/audiorelay.jar $out/lib
+    install -Dm644 lib/app/audiorelay.jar $out/lib/audiorelay.jar
 
     # Can't use from pkgs since these ones are older and newer fails to load some symbols
-    cp lib/runtime/lib/libnative-rtaudio.so $out/lib
-    cp lib/runtime/lib/libnative-opus.so $out/lib
+    install -D lib/runtime/lib/libnative-rtaudio.so $out/lib/libnative-rtaudio.so
+    install -D lib/runtime/lib/libnative-opus.so $out/lib/libnative-opus.so
 
     makeWrapper ${temurin-bin-17}/bin/java $out/bin/audiorelay \
       --add-flags "-jar $out/lib/audiorelay.jar" \
