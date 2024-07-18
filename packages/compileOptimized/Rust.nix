@@ -45,7 +45,6 @@ let
   ++ lib.optional enableNoPIC "relocation-model=static"
   ++ lib.optional enableNativeOptimizations "target-cpu=native";
 in
-
 pkg.overrideAttrs (finalAttrs: prevAttrs: {
   cargoBuildType = "release";
 

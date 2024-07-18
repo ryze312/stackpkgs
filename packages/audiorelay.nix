@@ -45,7 +45,6 @@ let
     startupWMClass = "com-azefsw-audioconnect-desktop-app-MainKt";
   };
 in
-
 stdenv.mkDerivation {
   pname = "audiorelay";
   version = "0.27.5";

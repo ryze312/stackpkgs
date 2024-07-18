@@ -17,7 +17,6 @@ let
 			++ lib.optional enableNativeOptimizations "-march=native"
 			++ additionalFlags;
 in
-
 pkg.overrideAttrs (prevAttrs: {
 	env.NIX_CFLAGS_COMPILE = (prevAttrs.env.NIX_CFLAGS_COMPILE or "")
 							 + lib.strings.concatStringsSep " " flags;
