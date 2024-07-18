@@ -71,7 +71,7 @@ stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
 
-    install -Dm644 ${desktopItem}/share/applications/audiorelay.desktop $out/share/applications/audiorelay
+    install -Dm644 ${desktopItem}/share/applications/audiorelay.desktop $out/share/applications/audiorelay.desktop
     install -Dm644 lib/AudioRelay.png $out/share/pixmaps/audiorelay.png
 
     install -Dm644 lib/app/audiorelay.jar $out/lib/audiorelay.jar
