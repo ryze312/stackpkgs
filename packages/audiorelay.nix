@@ -3,6 +3,7 @@
   stdenv,
   fetchzip,
   makeWrapper,
+  makeDesktopItem,
   temurin-bin-17,
   zip,
 
@@ -30,6 +31,19 @@ let
     libpulseaudio
     stdenv.cc.cc.lib
   ];
+
+  desktopItem = makeDesktopItem {
+    name = "audiorelay";
+
+    desktopName = "AudioRelay";
+    comment = "Stream audio between your devices";
+    categories = [ "AudioVideo" "Audio" "Network" ];
+    icon = "audiorelay";
+    exec = "audiorelay";
+
+    startupNotify = true;
+    startupWMClass = "com-azefsw-audioconnect-desktop-app-MainKt";
+  };
 in
 
 stdenv.mkDerivation {
@@ -57,6 +71,10 @@ stdenv.mkDerivation {
 
   installPhase = ''
     runHook preInstall
+
+    mkdir -p $out/share/{applications,pixmaps}
+    cp ${desktopItem}/share/applications/audiorelay.desktop $out/share/applications
+    cp lib/AudioRelay.png $out/share/pixmaps/audiorelay.png
 
     mkdir -p $out/lib
     cp lib/app/audiorelay.jar $out/lib
