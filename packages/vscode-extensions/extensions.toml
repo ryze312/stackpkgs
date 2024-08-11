@@ -36,3 +36,13 @@ hash = "sha256-fBe0mYq0iWerxvBYF5jFS/dZizu65Nn1iHypo69Bb50="
 description = "Colorful Comment Highlighter for Visual Studio Code"
 homepage = "https://github.com/willasm/comment-highlighter#readme"
 license = "MIT"
+
+
+[geequlim.godot-tools.info]
+version = "2.1.0"
+hash = "sha256-/0D4IJQXcjVtmX5gLKfEvviTQM595Y0EzCxlmVnsnJw="
+
+[geequlim.godot-tools.meta]
+description = "Game development tools for working with Godot Engine in Visual Studio Code"
+homepage = "https://github.com/godotengine/godot-vscode-plugin#readme"
+license = "MIT"

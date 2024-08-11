@@ -66,3 +66,4 @@ Extensions are built from [TOML file](./packages/vscode-extensions/extensions.to
 - [Catppuccin.catppuccin-vsc-icons](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
 - [keifererikson.nightfox](https://marketplace.visualstudio.com/items?itemName=keifererikson.nightfox)
 - [willasm.comment-highlighter](https://marketplace.visualstudio.com/items?itemName=willasm.comment-highlighter)
+- [geequlim.godot-tools](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools)
