@@ -9,8 +9,8 @@ license = "MIT"
 
 
 [Catppuccin.catppuccin-vsc-icons.info]
-version = "1.13.0"
-hash = "sha256-4gsblUMcN7a7UgoklBjc+2uiaSERq1vmi0exLht+Xi0="
+version = "1.14.0"
+hash = "sha256-tQBPi4q1ovM1ubZ0yjN7I1Jg8kxLUOGsaLkdi6wZM0c="
 
 [Catppuccin.catppuccin-vsc-icons.meta]
 description = "Catppuccin Icons for VSCode/VSCodium"
