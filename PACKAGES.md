@@ -1,9 +1,10 @@
 # Packages
-| Name              | Package           | Description                                                                             |
-|-------------------|-------------------|-----------------------------------------------------------------------------------------|
-| AudioRelay        | audiorelay        | Application to stream every sound from your PC to one or multiple Android devices       |
-| Compile optimized | compileOptimized  | Utility function for compiling packages with custom compile flags aimed at optimization |
-| VSCode extensions | vscode-extensions | Collection of VSCode extensions not found in nixpkgs                                    |
+| Name                  | Package             | Description                                                                             |
+|-----------------------|---------------------|-----------------------------------------------------------------------------------------|
+| AudioRelay            | audiorelay          | Application to stream every sound from your PC to one or multiple Android devices       |
+| Compile optimized     | compileOptimized    | Utility function for compiling packages with custom compile flags aimed at optimization |
+| VSCode extensions     | vscode-extensions   | Collection of VSCode extensions not found in nixpkgs                                    |
+| Ultimate Doom Builder | UltimateDoomBuilder | Comprehensive map editor for Doom, Heretic, Hexen and Strife based games                |
 
 # Compile optimized
 Compile packages written in various languages using custom compile flags, typically this would override some attribute in the provided package derivation. A set of defaults is provided, which can be overriden. Additional flags may be set using `additionalFlags` parameter.
