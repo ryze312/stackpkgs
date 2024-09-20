@@ -9,7 +9,16 @@
 
 pkg:
 
-assert builtins.elem optimizationLevel [ "O0" "O1" "O2" "O3" "Ofast" "Os" "Oz" "Og" ];
+assert lib.assertOneOf "optimizationLevel" optimizationLevel [
+	"O0"
+	"O1"
+	"O2"
+	"O3"
+	"Ofast"
+	"Os"
+	"Oz"
+	"Og"
+];
 
 let
 	flags = [ "-${optimizationLevel}" ]

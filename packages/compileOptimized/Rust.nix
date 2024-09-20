@@ -21,13 +21,13 @@
 
 pkg:
 
-assert builtins.elem opt-level [ "0" "1" "2" "3" "s" "z" ];
-assert builtins.elem debug [ "none" "line-directives-only" "line-tables-only" "limited" "full" ];
-assert builtins.elem split-debuginfo [ "off" "packed" "unpacked" ];
-assert builtins.elem strip [ "none" "debuginfo" "symbols" ];
-assert builtins.elem lto [ "off" "thin" "fat" ];
-assert builtins.elem panic [ "unwind" "abort" ];
-assert codegen-units > 0;
+assert lib.assertOneOf "opt-level" opt-level [ "0" "1" "2" "3" "s" "z" ];
+assert lib.assertOneOf "debug" debug [ "none" "line-directives-only" "line-tables-only" "limited" "full" ];
+assert lib.assertOneOf "split-debug-info" split-debuginfo [ "off" "packed" "unpacked" ];
+assert lib.assertOneOf "strip" strip [ "none" "debuginfo" "symbols" ];
+assert lib.assertOneOf "lto" lto [ "off" "thin" "fat" ];
+assert lib.assertOneOf "panic" panic [ "unwind" "abort" ];
+assert lib.assertMsg (codegen-units > 0 && lib.mod codegen-units 1 == 0) "codegen-units must be a positive integer";
 
 let
   codegenOptions = [
