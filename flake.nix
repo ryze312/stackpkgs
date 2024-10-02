@@ -8,13 +8,15 @@
   outputs = { self, nixpkgs }:
   let
     system = "x86_64-linux";
+    overlay = import ./overlay.nix;
 
     pkgs = import nixpkgs {
       inherit system;
+      overlays = [ overlay ];
     };
   in
   {
     packages.${system} = pkgs.callPackage ./stackpkgs.nix {};
-    overlays.default = import ./overlay.nix;
+    overlays.default = overlay;
   };
 }
