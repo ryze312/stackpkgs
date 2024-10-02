@@ -1,6 +1,6 @@
 [LeonardSSH.vscord.info]
-version = "5.2.12"
-hash = "sha256-WGDEizYG6UAqe1jnhvjfFouXDA9Yr5P+BjxPahAIsTE="
+version = "5.2.13"
+hash = "sha256-Jgm3ekXFLhylX7RM6tdfi+lRLrcl4UQGmRHbr27M59M="
 
 [LeonardSSH.vscord.meta]
 description = "Highly customizable Discord Rich Presence extension for Visual Studio Code"
@@ -9,8 +9,8 @@ license = "MIT"
 
 
 [Catppuccin.catppuccin-vsc-icons.info]
-version = "1.14.0"
-hash = "sha256-tQBPi4q1ovM1ubZ0yjN7I1Jg8kxLUOGsaLkdi6wZM0c="
+version = "1.16.0"
+hash = "sha256-caIOQ2/NafUFp2J4odIM55kzOS3Of+WO84M5xNfkhf4="
 
 [Catppuccin.catppuccin-vsc-icons.meta]
 description = "Catppuccin Icons for VSCode/VSCodium"
@@ -39,8 +39,8 @@ license = "MIT"
 
 
 [geequlim.godot-tools.info]
-version = "2.1.0"
-hash = "sha256-/0D4IJQXcjVtmX5gLKfEvviTQM595Y0EzCxlmVnsnJw="
+version = "2.2.0"
+hash = "sha256-MCuDN4Ml4Z4KOufZY0fHL/h4clQjsA+DLIIxtZj8F9Q="
 
 [geequlim.godot-tools.meta]
 description = "Game development tools for working with Godot Engine in Visual Studio Code"
