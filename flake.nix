@@ -1,5 +1,5 @@
 {
-  description = "Collection of packages and overlays used by me";
+  description = "Collection of packages and overlays";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
