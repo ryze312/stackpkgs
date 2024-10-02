@@ -3,6 +3,8 @@
 |-----------------------|---------------------|-----------------------------------------------------------------------------------------|
 | AudioRelay            | audiorelay          | Application to stream every sound from your PC to one or multiple Android devices       |
 | Compile optimized     | compileOptimized    | Utility function for compiling packages with custom compile flags aimed at optimization |
+| Piped Backend         | piped-backend       | Core component behind Piped, and other alternative frontends                            |
+| Piped Proxy           | piped-proxy         | Proxy for Piped written in Rust                                                         |
 | VSCode extensions     | vscode-extensions   | Collection of VSCode extensions not found in nixpkgs                                    |
 | Ultimate Doom Builder | ultimatedoombuilder | Comprehensive map editor for Doom, Heretic, Hexen and Strife based games                |
 
