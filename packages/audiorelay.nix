@@ -93,5 +93,10 @@ stdenv.mkDerivation {
     homepage = "https://audiorelay.net";
     downloadPage = "https://audiorelay.net/downloads";
     license = lib.licenses.unfree;
+
+    sourceProvenance = with lib.sourceTypes; [
+      binaryBytecode
+      binaryNativeCode # native rtaudio and opus libs
+    ];
   };
 }
