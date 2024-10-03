@@ -74,14 +74,14 @@ stdenv.mkDerivation {
     install -Dm644 ${desktopItem}/share/applications/audiorelay.desktop $out/share/applications/audiorelay.desktop
     install -Dm644 lib/AudioRelay.png $out/share/pixmaps/audiorelay.png
 
-    install -Dm644 lib/app/audiorelay.jar $out/lib/audiorelay.jar
+    install -Dm644 lib/app/audiorelay.jar $out/share/audiorelay/audiorelay.jar
 
     # Can't use from pkgs since these ones are older and newer fails to load some symbols
     install -D lib/runtime/lib/libnative-rtaudio.so $out/lib/libnative-rtaudio.so
     install -D lib/runtime/lib/libnative-opus.so $out/lib/libnative-opus.so
 
     makeWrapper ${temurin-bin-17}/bin/java $out/bin/audiorelay \
-      --add-flags "-jar $out/lib/audiorelay.jar" \
+      --add-flags "-jar $out/share/audiorelay/audiorelay.jar" \
       --prefix LD_LIBRARY_PATH : $out/lib/ \
       --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath runtimeLibs}
 
