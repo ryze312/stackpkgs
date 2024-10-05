@@ -7,7 +7,7 @@
   stripJavaArchivesHook,
   makeWrapper,
   semeru-jre-bin-21,
-  jre ? semeru-jre-bin-21
+  javaRuntime ? semeru-jre-bin-21
 }:
 
 stdenv.mkDerivation {
@@ -40,7 +40,7 @@ stdenv.mkDerivation {
     runHook preBuild
 
     install -Dm644 build/libs/piped-1.0-all.jar $out/share/piped-backend.jar
-    makeWrapper ${jre}/bin/java $out/bin/piped-backend \
+    makeWrapper ${javaRuntime}/bin/java $out/bin/piped-backend \
       --add-flags "-jar $out/share/piped-backend.jar"
 
     runHook postBuild
