@@ -4,7 +4,6 @@
   stackpkgs,
   fetchFromGitHub,
   gradle,
-  stripJavaArchivesHook,
   makeWrapper,
   semeru-jre-bin-21,
   javaRuntime ? semeru-jre-bin-21
@@ -24,7 +23,6 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [
     gradle
-    stripJavaArchivesHook
     makeWrapper
   ];
 
