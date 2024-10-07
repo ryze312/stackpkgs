@@ -41,9 +41,9 @@ stdenv.mkDerivation {
   installPhase = ''
     runHook preBuild
 
-    install -Dm644 build/libs/piped-1.0-all.jar $out/share/piped-backend.jar
+    install -Dm644 build/libs/piped-1.0-all.jar $out/share/piped-backend/piped-backend.jar
     makeWrapper ${javaRuntime}/bin/java $out/bin/piped-backend \
-      --add-flags "-jar $out/share/piped-backend.jar"
+      --add-flags "-jar $out/share/piped-backend/piped-backend.jar"
 
     runHook postBuild
   '';
