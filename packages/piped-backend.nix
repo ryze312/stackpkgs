@@ -6,7 +6,9 @@
   gradle,
   makeWrapper,
   semeru-jre-bin-21,
-  javaRuntime ? semeru-jre-bin-21
+  javaRuntime ? semeru-jre-bin-21,
+
+  patchWithJunixsocket ? false
 }:
 
 stdenv.mkDerivation {
@@ -25,6 +27,8 @@ stdenv.mkDerivation {
     gradle
     makeWrapper
   ];
+
+  patches = lib.optional patchWithJunixsocket ./piped-backend/add_junixsocket.patch;
 
   mitmCache = gradle.fetchDeps {
     pkg = stackpkgs.piped-backend;
