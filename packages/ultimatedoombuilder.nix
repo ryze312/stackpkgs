@@ -30,7 +30,7 @@ let
 in
 stdenv.mkDerivation {
   pname = "UltimateDoomBuilder";
-  version = "4190-unstable-2024-08-04";
+  version = "4207";
 
   src = fetchFromGitHub {
     owner = "UltimateDoomBuilder";
@@ -38,8 +38,8 @@ stdenv.mkDerivation {
 
     # Have to use later commit because of missing DLLs
     # See https://github.com/UltimateDoomBuilder/UltimateDoomBuilder/commit/6a66d1ada4b47c1331413ea8c5755e275c594df2
-    rev = "66f7204f6c9265744f96ee9410f22bfa97e0b7fb";
-    hash = "sha256-PzgkG+RD9zMX3aWTwNzrxiIC6fmU9psa/MeBQbQQ+Gg==";
+    rev = "e7083ff00d2d9a2d33d5dbf610d15e2719b14f4b";
+    hash = "sha256-DjLgyuPwT92q0QthwWLCSF+I9lTgHxHqsAwESyYT/xc=";
   };
 
   nativeBuildInputs = [
