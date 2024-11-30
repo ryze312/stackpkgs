@@ -9,8 +9,8 @@ license = "MIT"
 
 
 [Catppuccin.catppuccin-vsc-icons.info]
-version = "1.16.0"
-hash = "sha256-caIOQ2/NafUFp2J4odIM55kzOS3Of+WO84M5xNfkhf4="
+version = "1.17.0"
+hash = "sha256-CSAIDlZNrelBf891ztK4n9IaRdtXqpeXnI00hG0/nfA="
 
 [Catppuccin.catppuccin-vsc-icons.meta]
 description = "Catppuccin Icons for VSCode/VSCodium"
@@ -39,8 +39,8 @@ license = "MIT"
 
 
 [geequlim.godot-tools.info]
-version = "2.2.0"
-hash = "sha256-MCuDN4Ml4Z4KOufZY0fHL/h4clQjsA+DLIIxtZj8F9Q="
+version = "2.3.0"
+hash = "sha256-iuSec4PoVxyu1KB2jfCYOd98UrqQjH3q24zOR4VCPgs="
 
 [geequlim.godot-tools.meta]
 description = "Game development tools for working with Godot Engine in Visual Studio Code"
