@@ -46,3 +46,12 @@ hash = "sha256-iuSec4PoVxyu1KB2jfCYOd98UrqQjH3q24zOR4VCPgs="
 description = "Game development tools for working with Godot Engine in Visual Studio Code"
 homepage = "https://github.com/godotengine/godot-vscode-plugin#readme"
 license = "MIT"
+
+[vadimcn.vscode-lldb.info]
+version = "1.11.1"
+hash = "sha256-urWkXVwD6Ad7DFVURc6sLQhhc6iKCgY89IovIWByz9U="
+
+[vadimcn.vscode-lldb.meta]
+description = "A native debugger extension for VSCode based on LLDB"
+homepage = "https://github.com/vadimcn/codelldb"
+license = "MIT"
