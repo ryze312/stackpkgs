@@ -48,8 +48,8 @@ homepage = "https://github.com/godotengine/godot-vscode-plugin#readme"
 license = "MIT"
 
 [vadimcn.vscode-lldb.info]
-version = "1.11.1"
-hash = "sha256-urWkXVwD6Ad7DFVURc6sLQhhc6iKCgY89IovIWByz9U="
+version = "1.11.3"
+hash = "sha256-Z3vDgI3I4Ug0n0zNKRn7y4o3yIy5R1oenad4sd95qJk="
 
 [vadimcn.vscode-lldb.meta]
 description = "A native debugger extension for VSCode based on LLDB"
