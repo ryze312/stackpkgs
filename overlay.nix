@@ -1,7 +1,9 @@
 final: prev:
 
 let
-  stackpkgs = prev.callPackage ./stackpkgs.nix {};
+  stackpkgs = prev.callPackage ./stackpkgs.nix {
+     inherit (prev) invidious inv-sig-helper;
+  };
 in
 {
   stackpkgs = builtins.removeAttrs stackpkgs [

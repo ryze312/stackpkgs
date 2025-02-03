@@ -1,4 +1,4 @@
-{ callPackage }:
+{ callPackage, invidious, inv-sig-helper }:
 
 {
   audiorelay = callPackage ./packages/audiorelay.nix {};
@@ -7,7 +7,7 @@
   vscode-extensions = callPackage ./packages/vscode-extensions.nix {};
 
   unstable = {
-    invidious = callPackage ./packages/unstable/invidious.nix {};
-    inv-sig-helper = callPackage ./packages/unstable/inv-sig-helper.nix {};
+    invidious = callPackage ./packages/unstable/invidious.nix { inherit invidious; };
+    inv-sig-helper = callPackage ./packages/unstable/inv-sig-helper.nix { inherit inv-sig-helper; };
   };
 }
