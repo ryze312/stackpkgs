@@ -1,7 +1,7 @@
 final: prev:
 
 let
-  stackpkgs = final.callPackage ./stackpkgs.nix {};
+  stackpkgs = prev.callPackage ./stackpkgs.nix {};
 in
 {
   stackpkgs = builtins.removeAttrs stackpkgs [
