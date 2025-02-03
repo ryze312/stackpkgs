@@ -1,0 +1,13 @@
+{
+  "invidious": {
+    "hash": "sha256-mchBghZTyuRVqEjgH/pF0GJxQ38NjRpTuzJ7EpUP4RM=",
+    "version": "2.20241110.0-unstable-2024-11-08",
+    "date": "2025.02.03",
+    "commit": "164d764",
+    "rev": "164d764d553921e6ee98facda241f13c2103ec90"
+  },
+  "videojs": {
+    "hash": "sha256-jED3zsDkPN8i6GhBBJwnsHujbuwlHdsVpVqa1/pzSH4="
+  }
+}
+
