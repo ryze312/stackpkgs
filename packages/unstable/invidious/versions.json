@@ -1,10 +1,10 @@
 {
   "invidious": {
-    "hash": "sha256-gpKu2zFBL4pYKEqMBQDVA+Ucuz04aJNbAusEZvN5ZyU=",
-    "version": "2.20250314.0-unstable-2025-03-26",
-    "date": "2025.03.26",
-    "commit": "23ff613",
-    "rev": "23ff6135bb4304c6b5e9de6fc06e67bfadc9651a"
+    "hash": "sha256-SsgYNdpxYoMlXkGJvOfhTpLxi5EEzMB+bPOWDay6nww=",
+    "version": "2.20250314.0-unstable-2025-04-04",
+    "date": "2025.04.04",
+    "commit": "0c07e9d",
+    "rev": "0c07e9d27ac773d8423143c11bbcd36eaae0f8e4"
   },
   "videojs": {
     "hash": "sha256-jED3zsDkPN8i6GhBBJwnsHujbuwlHdsVpVqa1/pzSH4="
