@@ -17,6 +17,7 @@
   in
   {
     packages.${system} = pkgs.callPackage ./stackpkgs.nix {};
+    nixosModules = import ./modules.nix;
     overlays.default = overlay;
   };
 }
