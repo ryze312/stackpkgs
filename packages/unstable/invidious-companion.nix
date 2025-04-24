@@ -20,16 +20,14 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "invidious-companion";
-  version = "0-unstable-2025-04-06";
+  version = "0-unstable-2025-04-24";
 
   src = fetchFromGitHub {
     owner = "iv-org";
     repo = pname;
 
-    # Latest version that works
-    # See https://github.com/iv-org/invidious-companion/issues/80
-    rev = "26cb520e15b8bd3b0ce03233353877a372a9b9ab";
-    hash = "sha256-Bg3eQmKH7YB/F02TR7Ki1eH01CDKLM1aa3fp+peolUA=";
+    rev = "f9f89a2192a0772d33e5e2ceec3586f169b42996";
+    hash = "sha256-cnMk7HCGzvQ8AosheETR+6XfLnk2tOffKOs+sKZZ1HM=";
   };
 
   nativeBuildInputs = [
