@@ -3,7 +3,6 @@
 {
 	optimizationLevel ? "O3",
 	enableLTO ? true,
-	enableNativeOptimizations ? true,
 	additionalFlags ? []
 }:
 
@@ -23,7 +22,6 @@ assert lib.assertOneOf "optimizationLevel" optimizationLevel [
 let
 	flags = [ "-${optimizationLevel}" ]
 			++ lib.optional enableLTO "-flto"
-			++ lib.optional enableNativeOptimizations "-march=native"
 			++ additionalFlags;
 in
 pkg.overrideAttrs (prevAttrs: {

@@ -14,7 +14,6 @@
   lto ? "fat",
   panic ? "abort",
   codegen-units ? 1,
-  enableNativeOptimizations ? true,
   enableNoPIC ? false,
   additionalFlags ? []
 }:
@@ -42,8 +41,7 @@ let
     "codegen-units=${toString codegen-units}"
   ]
   ++ lib.optional (lto != "off") "embed-bitcode=true" # LLVM bitcode is required for performing LTO
-  ++ lib.optional enableNoPIC "relocation-model=static"
-  ++ lib.optional enableNativeOptimizations "target-cpu=native";
+  ++ lib.optional enableNoPIC "relocation-model=static";
 in
 pkg.overrideAttrs (finalAttrs: prevAttrs: {
   cargoBuildType = "release";

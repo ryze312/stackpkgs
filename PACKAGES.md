@@ -19,7 +19,7 @@ compileOptimized.${language}
 ## Example
 ```
 compileOptimized.Rust {
-    enableNativeOptimizations = false; # No native optimizations
+    panic = "unwind"; # Use unwind for panic
 } pkgs.rustc
 ```
 
@@ -33,7 +33,6 @@ Overrides: `env.NIX_CFLAGS_COMPILE`
 {
   optimizationLevel ? "O3",
   enableLTO ? true,
-  enableNativeOptimizations ? true,
   additionalFlags ? []
 }
 ```
@@ -53,7 +52,6 @@ Overrides: `RUSTFLAGS`
   lto ? "fat",
   panic ? "abort",
   codegen-units ? 1,
-  enableNativeOptimizations ? true,
   enableNoPIC ? false,
   additionalFlags ? []
 }
