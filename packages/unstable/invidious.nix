@@ -10,7 +10,7 @@ in
 # Don't build in case there is a newer version available.
 # This means we need to update commit or just use the nixpkgs provided version
 assert lib.assertMsg
-      (!(lib.strings.versionOlder version "2.20250314.0"))
+      (!(lib.strings.versionOlder version "2.20250504.0"))
       "New Invidious version (${version}), please check changelog and update";
 
 invidious-unstable.overrideAttrs {
