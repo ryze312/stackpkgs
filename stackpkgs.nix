@@ -1,4 +1,4 @@
-{ callPackage, invidious, inv-sig-helper }:
+{ callPackage, invidious }:
 
 {
   audiorelay = callPackage ./packages/audiorelay.nix {};
@@ -8,7 +8,6 @@
 
   unstable = {
     invidious = callPackage ./packages/unstable/invidious.nix { inherit invidious; };
-    inv-sig-helper = callPackage ./packages/unstable/inv-sig-helper.nix { inherit inv-sig-helper; };
     invidious-companion = callPackage ./packages/unstable/invidious-companion.nix {};
   };
 }
