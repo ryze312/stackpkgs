@@ -2,7 +2,7 @@ final: prev:
 
 let
   stackpkgs = prev.callPackage ./stackpkgs.nix {
-     inherit (prev) invidious inv-sig-helper;
+     inherit (prev) invidious;
   };
 in
 {
