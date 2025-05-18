@@ -15,19 +15,19 @@ let
     "--allow-read"
     "--allow-write=/var/tmp/youtubei.js"
     "--allow-sys=hostname"
-    "--allow-import=github.com:443,jsr.io:443,raw.githubusercontent.com:443,esm.sh:443,deno.land:443"
+    "--allow-import=github.com:443,jsr.io:443,cdn.jsdelivr.net:443,esm.sh:443,deno.land:443"
   ];
 in
 stdenv.mkDerivation rec {
   pname = "invidious-companion";
-  version = "0-unstable-2025-04-24";
+  version = "0-unstable-2025-05-12";
 
   src = fetchFromGitHub {
     owner = "iv-org";
     repo = pname;
 
-    rev = "f9f89a2192a0772d33e5e2ceec3586f169b42996";
-    hash = "sha256-cnMk7HCGzvQ8AosheETR+6XfLnk2tOffKOs+sKZZ1HM=";
+    rev = "b5880aea9575bc950a9e0ee62f9a8cc5b6c049f8";
+    hash = "sha256-sNt0ts2vI44yPgoai8agJQYzudqV3ESiOiTCgZC7nT4=";
   };
 
   nativeBuildInputs = [
