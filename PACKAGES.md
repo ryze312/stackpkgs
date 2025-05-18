@@ -3,10 +3,16 @@
 |-----------------------|---------------------|-----------------------------------------------------------------------------------------|
 | AudioRelay            | audiorelay          | Application to stream every sound from your PC to one or multiple Android devices       |
 | Compile optimized     | compileOptimized    | Utility function for compiling packages with custom compile flags aimed at optimization |
-| Piped Backend         | piped-backend       | Core component behind Piped, and other alternative frontends                            |
-| Piped Proxy           | piped-proxy         | Proxy for Piped written in Rust                                                         |
 | VSCode extensions     | vscode-extensions   | Collection of VSCode extensions not found in nixpkgs                                    |
 | Ultimate Doom Builder | ultimatedoombuilder | Comprehensive map editor for Doom, Heretic, Hexen and Strife based games                |
+
+# Unstable packages
+Unstable packages are packages that may or may not be in nixpkgs, they are located under unstable attrset.
+These packages are updated more frequently than their nixpkgs counterparts.
+| Name                  | Package             | Description                                    |
+|-----------------------|---------------------|------------------------------------------------|
+| Invidious             | invidious           | Open source alternative front-end to YouTube   |
+| invidious-companion   | invidious-companion | Invidious companion for handling video streams |
 
 # Compile optimized
 Compile packages written in various languages using custom compile flags, typically this would override some attribute in the provided package derivation. A set of defaults is provided, which can be overridden. Additional flags may be set using `additionalFlags` parameter.
