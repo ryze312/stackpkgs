@@ -93,6 +93,7 @@ stdenv.mkDerivation {
     homepage = "https://audiorelay.net";
     downloadPage = "https://audiorelay.net/downloads";
     license = lib.licenses.unfree;
+    mainProgram = "audiorelay";
 
     sourceProvenance = with lib.sourceTypes; [
       binaryBytecode
