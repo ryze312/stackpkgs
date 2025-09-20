@@ -1,6 +1,6 @@
 [LeonardSSH.vscord.info]
-version = "5.2.13"
-hash = "sha256-Jgm3ekXFLhylX7RM6tdfi+lRLrcl4UQGmRHbr27M59M="
+version = "5.3.6"
+hash = "sha256-mLSlZQ7R3coh1fN16F2PnmsLqRaL0EYz5EElK3IeZLU="
 
 [LeonardSSH.vscord.meta]
 description = "Highly customizable Discord Rich Presence extension for Visual Studio Code"
@@ -9,8 +9,8 @@ license = "MIT"
 
 
 [Catppuccin.catppuccin-vsc-icons.info]
-version = "1.17.0"
-hash = "sha256-CSAIDlZNrelBf891ztK4n9IaRdtXqpeXnI00hG0/nfA="
+version = "1.24.0"
+hash = "sha256-2M7N4Ccw9FAaMmG36hGHi6i0i1qR+uPCSgXELAA03Xk="
 
 [Catppuccin.catppuccin-vsc-icons.meta]
 description = "Catppuccin Icons for VSCode/VSCodium"
@@ -29,8 +29,8 @@ license = "MIT"
 
 
 [willasm.comment-highlighter.info]
-version = "2.0.0"
-hash = "sha256-fBe0mYq0iWerxvBYF5jFS/dZizu65Nn1iHypo69Bb50="
+version = "2.1.1"
+hash = "sha256-gGHoDL4NJB2hCrlPP3yp4t2UN+8AIN3s04T8LYyvt/Y="
 
 [willasm.comment-highlighter.meta]
 description = "Colorful Comment Highlighter for Visual Studio Code"
@@ -39,8 +39,8 @@ license = "MIT"
 
 
 [geequlim.godot-tools.info]
-version = "2.3.0"
-hash = "sha256-iuSec4PoVxyu1KB2jfCYOd98UrqQjH3q24zOR4VCPgs="
+version = "2.5.1"
+hash = "sha256-kAzRSNZw1zaECblJv7NzXnE2JXSy9hzdT2cGX+uwleY="
 
 [geequlim.godot-tools.meta]
 description = "Game development tools for working with Godot Engine in Visual Studio Code"
@@ -48,8 +48,8 @@ homepage = "https://github.com/godotengine/godot-vscode-plugin#readme"
 license = "MIT"
 
 [vadimcn.vscode-lldb.info]
-version = "1.11.3"
-hash = "sha256-Z3vDgI3I4Ug0n0zNKRn7y4o3yIy5R1oenad4sd95qJk="
+version = "1.11.5"
+hash = "sha256-AtUNfk2AFJ6NZnIRlnPXXXO8IluyI2/kg7UxQHrWg+w="
 
 [vadimcn.vscode-lldb.meta]
 description = "A native debugger extension for VSCode based on LLDB"
