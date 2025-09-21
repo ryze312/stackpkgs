@@ -20,7 +20,7 @@ in
 # This means we need to update commit or just use the nixpkgs provided version
 # compareVersions returns 1 if left hand version is newer than the right hand version
 assert lib.assertMsg
-      (builtins.compareVersions nixpkgsVersion "2.20250517.0" != 1)
+      (builtins.compareVersions nixpkgsVersion "2.20250913.0" != 1)
       "New Invidious version (${nixpkgsVersion}), please check changelog and update";
 
 invidious-unstable.overrideAttrs {
