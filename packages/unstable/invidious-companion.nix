@@ -8,26 +8,38 @@
 }:
 
 let
+  date = "2025.09.17";
+  rev = "d89d384e8481c8d35948b93a71a64b667daf6bf7";
+
+  dateVersion = lib.replaceString "." "-" date;
+  revAbbrev = lib.substring 0 7 rev;
+
   # Taken from deno.json
-  denoArgs = [
+  denoArgs = lib.escapeShellArgs [
     "--allow-env"
     "--allow-net"
     "--allow-read"
-    "--allow-write=/var/tmp/youtubei.js"
+    "--allow-write=/var/tmp/youtubei.js,/tmp/invidious-companion.sock"
     "--allow-sys=hostname"
     "--allow-import=github.com:443,jsr.io:443,cdn.jsdelivr.net:443,esm.sh:443,deno.land:443"
+  ];
+
+  companionArgs = lib.escapeShellArgs [
+    "--_version_date=${date}"
+    "--_version_commit=${revAbbrev}"
   ];
 in
 stdenv.mkDerivation rec {
   pname = "invidious-companion";
-  version = "0-unstable-2025-05-12";
+  version = "0-unstable-${dateVersion}";
 
   src = fetchFromGitHub {
+    inherit rev;
+
     owner = "iv-org";
     repo = pname;
 
-    rev = "b5880aea9575bc950a9e0ee62f9a8cc5b6c049f8";
-    hash = "sha256-sNt0ts2vI44yPgoai8agJQYzudqV3ESiOiTCgZC7nT4=";
+    hash = "sha256-0tL9y7gW79D6iliIg2rWYvPZWUWdbT3wUUd92Htfdqk=";
   };
 
   nativeBuildInputs = [
@@ -43,8 +55,9 @@ stdenv.mkDerivation rec {
     makeWrapper ${deno}/bin/deno $out/bin/invidious-companion \
       --chdir $out/share/${pname} \
       --add-flags run \
-      --add-flags "${lib.escapeShellArgs denoArgs}" \
-      --add-flags src/main.ts
+      --add-flags "${denoArgs}" \
+      --add-flags src/main.ts \
+      --add-flags "${companionArgs}"
 
     runHook postInstall
   '';
