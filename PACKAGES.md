@@ -4,7 +4,6 @@
 | AudioRelay            | audiorelay          | Application to stream every sound from your PC to one or multiple Android devices       |
 | Compile optimized     | compileOptimized    | Utility function for compiling packages with custom compile flags aimed at optimization |
 | VSCode extensions     | vscode-extensions   | Collection of VSCode extensions not found in nixpkgs                                    |
-| Ultimate Doom Builder | ultimatedoombuilder | Comprehensive map editor for Doom, Heretic, Hexen and Strife based games                |
 
 # Unstable packages
 Unstable packages are packages that may or may not be in nixpkgs, they are located under unstable attrset.
