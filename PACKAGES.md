@@ -17,12 +17,12 @@ These packages are updated more frequently than their nixpkgs counterparts.
 Compile packages written in various languages using custom compile flags, typically this would override some attribute in the provided package derivation. A set of defaults is provided, which can be overridden. Additional flags may be set using `additionalFlags` parameter.
 
 You can use the functions as follows:
-```
+```nix
 compileOptimized.${language}
 ```
 
 ## Example
-```
+```nix
 compileOptimized.Rust {
     panic = "unwind"; # Use unwind for panic
 } pkgs.rustc
@@ -34,7 +34,7 @@ Overrides: `env.NIX_CFLAGS_COMPILE`
 `CNoLTO` is also provided for convenience, as many packages may fail to compile with LTO enabled.
 
 ### Defaults
-```
+```nix
 {
   optimizationLevel ? "O3",
   enableLTO ? true,
@@ -46,7 +46,7 @@ Overrides: `env.NIX_CFLAGS_COMPILE`
 Overrides: `RUSTFLAGS`
 
 ### Defaults
-```
+```nix
 {
   opt-level ? "3",
   debug ? "none",
