@@ -8,8 +8,8 @@
 }:
 
 let
-  date = "2025.09.17";
-  rev = "d89d384e8481c8d35948b93a71a64b667daf6bf7";
+  date = "2025.09.29";
+  rev = "0065a3e42bde974c728605ba7040b20df885cb68";
 
   dateVersion = lib.replaceString "." "-" date;
   revAbbrev = lib.substring 0 7 rev;
@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     owner = "iv-org";
     repo = pname;
 
-    hash = "sha256-0tL9y7gW79D6iliIg2rWYvPZWUWdbT3wUUd92Htfdqk=";
+    hash = "sha256-sVLJJjReiYMRlI04N9BbObP2+ePxbaWzbmeamvS91UA=";
   };
 
   nativeBuildInputs = [
