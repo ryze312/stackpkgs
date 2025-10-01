@@ -16,12 +16,12 @@ let
   };
 in
 
-# Don't build in case there is a newer version available.
-# This means we need to update commit or just use the nixpkgs provided version
+# Warn in case there is a newer version available,
+# this means we need to update the commit.
 # compareVersions returns 1 if left hand version is newer than the right hand version
-assert lib.assertMsg
-      (builtins.compareVersions nixpkgsVersion "2.20250913.0" != 1)
-      "New Invidious version (${nixpkgsVersion}), please check changelog and update";
+lib.warnIf
+      (builtins.compareVersions nixpkgsVersion "2.20250913.0" == 1)
+      "New Invidious version (${nixpkgsVersion}), please check the changelog and update"
 
 invidious-unstable.overrideAttrs {
   # No need for the patches, since we pull from master
