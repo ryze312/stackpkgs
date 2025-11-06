@@ -8,8 +8,8 @@
 }:
 
 let
-  date = "2025.09.29";
-  rev = "0065a3e42bde974c728605ba7040b20df885cb68";
+  date = "2025.11.03";
+  rev = "e0533689e18822b61349d3333a1a82e929ebf217";
 
   dateVersion = lib.replaceString "." "-" date;
   revAbbrev = lib.substring 0 7 rev;
@@ -18,7 +18,7 @@ let
   denoArgs = lib.escapeShellArgs [
     "--allow-env"
     "--allow-net"
-    "--allow-read"
+    "--allow-read=.,/var/tmp/youtubei.js,/tmp/invidious-companion.sock"
     "--allow-write=/var/tmp/youtubei.js,/tmp/invidious-companion.sock"
     "--allow-sys=hostname"
     "--allow-import=github.com:443,jsr.io:443,cdn.jsdelivr.net:443,esm.sh:443,deno.land:443"
