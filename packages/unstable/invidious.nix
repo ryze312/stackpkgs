@@ -1,17 +1,17 @@
-{ lib, crystal, invidious }:
+{ lib, crystal_1_16, invidious }:
 
 let
   nixpkgsVersion = invidious.version;
 
   # Hack to override shards file
-  crystalOverride = crystal // {
+  crystalOverride = crystal_1_16 // {
     buildCrystalPackage =
-      args: crystal.buildCrystalPackage
+      args: crystal_1_16.buildCrystalPackage
         (args // { shardsFile = ./invidious/shards.nix; });
   };
 
   invidious-unstable = invidious.override {
-    crystal = crystalOverride;
+    crystal_1_16 = crystalOverride;
     versions = lib.importJSON ./invidious/versions.json;
   };
 in
