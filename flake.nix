@@ -19,5 +19,16 @@
     packages.${system} = pkgs.callPackage ./stackpkgs.nix {};
     nixosModules = import ./modules.nix;
     overlays.default = overlay;
+
+    nixosConfigurations.stack = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./vm.nix
+      ];
+
+      specialArgs = {
+        inherit system;
+        newPkgs = pkgs;
+      };
+    };
   };
 }
