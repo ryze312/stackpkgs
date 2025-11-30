@@ -3,6 +3,7 @@
 {
   audiorelay = callPackage ./packages/audiorelay.nix {};
   compileOptimized = callPackage ./packages/compileOptimized.nix {};
+  twitch-recorder = callPackage ./packages/twitch-recorder.nix {};
   ultimatedoombuilder = callPackage ./packages/ultimatedoombuilder.nix {};
   vscode-extensions = callPackage ./packages/vscode-extensions.nix {};
 
