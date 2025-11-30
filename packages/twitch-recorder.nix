@@ -1,7 +1,7 @@
 {
   lib,
   python313Packages,
-  fetchFromGitea,
+  fetchPypi,
   ffmpeg-headless,
 }:
 
@@ -23,13 +23,10 @@ python313Packages.buildPythonApplication rec {
   version = "0.9.0";
   pyproject = true;
 
-  # Replace with fetchPyPI
-  src = fetchFromGitea {
-    domain = "code.thishorsie.rocks";
-    owner = "ryze";
-    repo = pname;
-    rev = "52719593721a8d5d9fc344e9f1ac66f70dc63923";
-    hash = "sha256-doakSR/mgbz7cGycdWR4XJ8nxX5KnOY2nfsx+kOjMQY=";
+  src = fetchPypi {
+    inherit version;
+    pname = "twitch_recorder";
+    hash = "sha256-/CBKDmgtjw42LPz9/lrjHSWip7Wt/QC5h8O+t/wrB0o=";
   };
 
   build-system = with python313Packages; [
