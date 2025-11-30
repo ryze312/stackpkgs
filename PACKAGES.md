@@ -3,6 +3,7 @@
 |-----------------------|---------------------|-----------------------------------------------------------------------------------------|
 | AudioRelay            | audiorelay          | Application to stream every sound from your PC to one or multiple Android devices       |
 | Compile optimized     | compileOptimized    | Utility function for compiling packages with custom compile flags aimed at optimization |
+| Twitch-Recorder       | twitch-recorder     | Twitch application for automatically downloading streams                                |
 | VSCode extensions     | vscode-extensions   | Collection of VSCode extensions not found in nixpkgs                                    |
 
 # Unstable packages
