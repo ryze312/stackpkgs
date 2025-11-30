@@ -36,7 +36,7 @@
     user = lib.mkOption {
       type = lib.types.str;
       default = "twitch-recorder";
-      description = '''
+      description = ''
         User for twitch-recorder service
       '';
     };
@@ -44,7 +44,7 @@
     group = lib.mkOption {
       type = lib.types.str;
       default = "twitch-recorder";
-      description = '''
+      description = ''
         Group for twitch-recorder service
       '';
     };
