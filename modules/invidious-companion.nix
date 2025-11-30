@@ -28,7 +28,7 @@ in
       default = null;
       description = ''
         File containing environment variables to be passed to the invidious-companion service.
-        Enviroment variables can be used to set certain configuration values, including secret key, such as:
+        Environment variables can be used to set certain configuration values, including secret key, such as:
         - `HOST` => `server.host`,
         - `PORT` => `server.port`,
         - `SERVER_SECRET_KEY` => `server.secret_key`,

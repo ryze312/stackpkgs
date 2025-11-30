@@ -18,7 +18,7 @@
       type = lib.types.nullOr lib.types.path;
       default = null;
       description = ''
-        Enviroment file in format defined by systemd.exec(5).
+        Environment file in format defined by systemd.exec(5).
         Client details can be passed this way, without havint to expose them in world-readable Nix store.
 
         ```
