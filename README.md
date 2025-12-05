@@ -17,19 +17,19 @@ inputs = {
   
   # Or from GitHub
   # stackpkgs = "github:ryze312/stackpkgs";
-}
+};
 ```
 
 ### Use the overlay
 ```nix
 nixpkgs.overlays = [
   stackpkgs.overlays.default
-]
+];
 
 # The packages will be accessible under the stackpkgs attrset
 environment.systemPackages = [
   pkgs.stackpkgs.audiorelay
-]
+];
 ```
 
 ### Use a module
@@ -40,7 +40,7 @@ imports = [ stackpkgs.nixosModules.twitch-recorder ];
 services.twitch-recorder = {
   enable = true;
   settings = {};
-}
+};
 ```
 
 ## See available:

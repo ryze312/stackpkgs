@@ -39,7 +39,7 @@ Overrides: `env.NIX_CFLAGS_COMPILE`
 {
   optimizationLevel ? "O3",
   enableLTO ? true,
-  additionalFlags ? []
+  additionalFlags ? [],
 }
 ```
 
@@ -59,7 +59,7 @@ Overrides: `RUSTFLAGS`
   panic ? "abort",
   codegen-units ? 1,
   enableNoPIC ? false,
-  additionalFlags ? []
+  additionalFlags ? [],
 }
 ```
 
