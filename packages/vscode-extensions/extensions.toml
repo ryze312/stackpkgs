@@ -1,6 +1,6 @@
 [LeonardSSH.vscord.info]
-version = "5.3.6"
-hash = "sha256-mLSlZQ7R3coh1fN16F2PnmsLqRaL0EYz5EElK3IeZLU="
+version = "5.3.8"
+hash = "sha256-tqyhu6pa+UFwCYpS3xioeSw4oET0TFfQmJ8hsSz3q/k="
 
 [LeonardSSH.vscord.meta]
 description = "Highly customizable Discord Rich Presence extension for Visual Studio Code"
@@ -9,8 +9,8 @@ license = "MIT"
 
 
 [Catppuccin.catppuccin-vsc-icons.info]
-version = "1.24.0"
-hash = "sha256-2M7N4Ccw9FAaMmG36hGHi6i0i1qR+uPCSgXELAA03Xk="
+version = "1.26.0"
+hash = "sha256-V1ZhNtCouo0EDrblvoZsiMy7BPPSGdOn5SoZl4kA/z0="
 
 [Catppuccin.catppuccin-vsc-icons.meta]
 description = "Catppuccin Icons for VSCode/VSCodium"
@@ -47,9 +47,10 @@ description = "Game development tools for working with Godot Engine in Visual St
 homepage = "https://github.com/godotengine/godot-vscode-plugin#readme"
 license = "MIT"
 
+
 [vadimcn.vscode-lldb.info]
-version = "1.11.5"
-hash = "sha256-AtUNfk2AFJ6NZnIRlnPXXXO8IluyI2/kg7UxQHrWg+w="
+version = "1.12.0"
+hash = "sha256-pHVoFTm2UaXCjGhDNBIbFsfjJc1GB+ugNeSsPSULthQ="
 
 [vadimcn.vscode-lldb.meta]
 description = "A native debugger extension for VSCode based on LLDB"
