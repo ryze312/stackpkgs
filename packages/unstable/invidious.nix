@@ -1,4 +1,8 @@
-{ lib, crystal_1_16, invidious }:
+{
+  lib,
+  crystal_1_16,
+  invidious,
+}:
 
 let
   nixpkgsVersion = invidious.version;
@@ -6,8 +10,7 @@ let
   # Hack to override shards file
   crystalOverride = crystal_1_16 // {
     buildCrystalPackage =
-      args: crystal_1_16.buildCrystalPackage
-        (args // { shardsFile = ./invidious/shards.nix; });
+      args: crystal_1_16.buildCrystalPackage (args // { shardsFile = ./invidious/shards.nix; });
   };
 
   invidious-unstable = invidious.override {
@@ -19,11 +22,11 @@ in
 # Warn in case there is a newer version available,
 # this means we need to update the commit.
 # compareVersions returns 1 if left hand version is newer than the right hand version
-lib.warnIf
-      (builtins.compareVersions nixpkgsVersion "2.20250913.0" == 1)
-      "New Invidious version (${nixpkgsVersion}), please check the changelog and update"
+lib.warnIf (builtins.compareVersions nixpkgsVersion "2.20260207.0" == 1)
+  "New Invidious version (${nixpkgsVersion}), please check the changelog and update"
 
-invidious-unstable.overrideAttrs {
-  # No need for the patches, since we pull from master
-  patches = [];
-}
+  invidious-unstable.overrideAttrs
+  {
+    # No need for the patches, since we pull from master
+    patches = [ ];
+  }
