@@ -46,6 +46,11 @@ python313Packages.buildPythonApplication rec {
     "--prefix PATH : \"${ffmpegPath}\""
   ];
 
+  # Replace uv-build
+  postPatch = ''
+    substituteInPlace pyproject.toml --replace-fail "uv_build>=0.9.0, <0.10" "uv_build==${python313Packages.uv-build.version}"
+  '';
+
   meta = {
     description = "Twitch application for automatically downloading streams";
     homepage = "https://code.thishorsie.rocks/ryze/twitch-recorder";
