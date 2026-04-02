@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
     owner = "iv-org";
     repo = pname;
 
-    hash = "sha256-qWLDqrJk0PySFcx2ke8DRzxK+LQfT4dKRFVgEd3EYsI=";
+    hash = "sha256-VPmkOYxwqrDcY25Au9vGuYgOc7C2BfLgGJGDK04lX6E=";
   };
 
   nativeBuildInputs = [
